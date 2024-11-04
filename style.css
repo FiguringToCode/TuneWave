@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: chartreuse;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+/*  INTRO SECTION OF PAGE  */
+
+.intro {
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    position: relative;
+    z-index: 10;
+}
+
+.bg > nav > img {
+    width: 200px;
+}
+
+.intro .bg{
+    background-image: url(Logos/Festival-UK-696x441.jpg);
+    width: 80vw;
+    height: 550px;
+    border: 2px solid white;
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1300px, 100vw);
+}
+
+.intro .opaqueBox {
+    width: 81vw;
+    height: 550px;
+    margin: -90px 0px;
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+}
+
+
+.introText  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: none;
+    position: relative;
+    z-index: 10;
+}
+
+.txt-1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.txt-2 {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.txt {
+    font-size: 20px
+}
+
+.btn {
+    margin: 90px auto;
+    width: 20vw;
+    padding: 15px;
+    color: chartreuse;
+    background-color: #191d21;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*  LIBRARY STYLING  */
+.playlist > h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+.pl-card {
+    margin: 55px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    row-gap: 10px;
+    column-gap: 20px;
+    justify-content: center;
+    overflow: auto;
+}
+
+.card-style {
+    cursor: pointer;
+}
+
+.card-style > h3, .card-style > p {
+    text-align: center;
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+
+/*  App Link Section :-   */
+.sec3 {
+    margin: 55px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+}
+
+.sec3 > img {
+    width: 500px;
+    margin: 0px 0px 0px 60px;
+}
+
+.sec3 > div {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.sec3 > div > h2 {
+    margin-top: 120px;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.seperator {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, chartreuse 50%, rgba(255, 255, 255, 0) 100%);
+    width: 20vw;
+    height: 5px;
+    margin: 0px auto 50px 0px;
+}
+
+.sec3 > div > p {
+    font-size: 25px;
+    font-weight: 150;
+}
+
+.appLinks {
+    margin: 55px 0px 0px 30px;
+}
+
+.seperator_1 {
+    height: 5px;
+    width: 65vw;
+    margin: 90px auto 100px auto;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, chartreuse 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+/*  FOOTER Styling  */
+.footer {
+    width: 60vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: -15px auto 130px auto;
+}
+a {
+    color: chartreuse;
+}
+a:hover {
+    color: white;
+}    
+    
+/*  PLAYBAR SECTION  */
+
+.playbar {
+    background-color: seagreen;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.control-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 16vw;
+    cursor: pointer;
+}
+
+.currentTime {
+    color: black;
+    margin: 11px -22px 0px 28px;
+}
+
+.seekbar {
+    height: 6px;
+    width: 35vw;
+    background-color: white;
+    position: relative;
+    top: 5px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.songTime {
+    color: black;
+    margin:  12px -42px 0px 80px;
+}
+
+.circle {
+    height: 13px;
+    width: 12px;
+    background-color: #191d21;
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: 0%;
+    cursor: pointer;
+}
+
+.volume {
+    position: relative;
+}
+
+.volume > button {
+    background-color: seagreen;
+    margin-top: 14px;
+    margin-left: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.range {
+    width: 15vw;
+    height: 35px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 60px;
+    left: -30px;
+    display: none;
+    transition: display 2s;
+    transform: translateY(50%);
+}
+
+.range > input {
+    width: 12vw;
+    border-radius: 30px;
+    position: relative;
+    bottom: -8px;
+    right: -19px;
+    cursor: pointer;
+}
+.volume:hover .range {
+    display: block;
+}
+
+
+.songInfo {
+    color: black;
+    margin: 8px 0px 0px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

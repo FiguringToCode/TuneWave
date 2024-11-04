@@ -1,0 +1,244 @@
+.border {
+    border-radius: 20px;
+}
+
+.btn-style {
+    padding: 8px;
+    background-color: #191d21;
+    color: chartreuse;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.search-btn {
+    padding: 18px 10px 19px 10px;
+    background-color: #191d21;
+    border: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.upload-btn {
+    padding: 18px 10px 19px 10px;
+    background-color: #191d21;
+    border: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.search-txt {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card-style {
+    position: relative;
+}
+
+.card-style > img:nth-child(1) {
+    width: 200px;
+    position: relative;
+}
+
+.card-style > img:nth-child(2) {
+    width: 50px;
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card-style > img:nth-child(2):hover {
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .txt-1 {
+        font-size: 35px;
+    }
+    .txt-2 {
+        font-size: 12px;
+    }
+    .txt {
+        font-size: 12px;
+    }
+
+
+
+    .search {
+        max-width: 45vw;
+        display: block;
+        text-align: center;
+    }
+    .search-btn {
+        position: relative;
+        top: -56px;
+        left: 223px;
+    }
+    .search-txt {
+        position: relative;
+        top: -53px;
+        left: 10px;
+    }
+    .upload-btn {
+        position: relative;
+        top: -53px;
+        left: 10px;
+        margin-bottom: -20px;
+    }
+
+
+
+    .pl-card {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 230px 230px;
+        row-gap: 5px;
+        column-gap: 10px;
+        align-items: center;
+        text-align: center;
+        overflow: auto;
+    }
+    .card-style > img {
+        width: 150px;
+    }    
+    .card-style > h3 {
+        font-size: 15px;
+    }
+    .card-style > p {
+        font-size: 10px;
+    }
+
+
+
+    .sec3 > img {
+        width: 300px;
+        margin: 0px 0px 0px 285px;
+    }
+    .sec3 > div {
+        margin-right: 250px;
+    }
+    .sec3 > div h2 {
+        font-size: 30px;
+    }
+    .sec3 > div > p {
+        font-size: 15px;
+    }
+    .appLinks {
+        margin-right: 20px;
+    }
+    .link1 > img {
+        width: 90px;
+    }
+    .link2 > img {
+        width: 100px;
+    }
+    
+
+
+    .footer {
+        width: 30vw;
+    }
+    a {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .bg > nav > img {
+        width: 150px;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+    .bg > nav > span {
+        margin-left: 80px;
+    }
+
+    
+    .sec3 > img {
+        width: 250px;
+        height: 300px;
+        margin: 0px 0px 0px 390px;
+    }
+    .sec3 > div {
+        margin-right: 366px;
+    }
+    .sec3 > div h2 {
+        font-size: 20px;
+    }
+    .sec3 > div > p {
+        font-size: 9px;
+    }
+    .seperator {
+        margin: 25px 0px 25px 0px;
+    }
+    .appLinks {
+        margin: 30px 0px 0px 0px;
+    }
+    .link1 > img {
+        width: 50px;
+    }
+    .link2 > img {
+        width: 60px;
+    }
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: 120px 120px;
+    }
+    
+
+    .currentTime, .seekbar, .songTime, .volume {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .pl-card {
+        grid-template-columns: 180px 180px;
+        grid-template-rows: 150px 150px;
+        row-gap: 15px;
+        column-gap: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .card-style > img:nth-child(1) {
+        width: 20vw;
+    }
+    .card-style > img:nth-child(2) {
+        width: 35px;
+        position: absolute;
+        bottom: 50px;
+        right: 60px;
+        cursor: pointer;
+        opacity: 0;
+
+    }
+    .card-style > h3 {
+        font-size: 8px;
+    }
+    .card-style > p {
+        font-size: 5px;
+    }
+
+
+    .sec3 > img {
+        width: 220px;
+        height: 260px;
+        margin: 0px 0px 0px 430px;
+    }
+    .sec3 > div {
+        margin-top: -80px;
+        margin-right: 430px;
+    }
+}
