@@ -54,7 +54,7 @@ const main = async () => {
             for( i = 0; i < songs.length; i++){
                 if(songs[i].includes(clickedSong)){
                     // var audio = new Audio("/songs/" + songs[i])
-                    currentSong.src = /songs/b.io/songs + songs[i]
+                    currentSong.src = /songs/ + songs[i]
                     currentSong.play()
                     document.querySelector(".songInfo").innerHTML = `<img src="${e.querySelector("img").src}" width="50vw"> ${e.querySelector("h3").innerHTML} / ${e.querySelector("p").innerHTML}`
                 }
