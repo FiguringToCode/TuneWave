@@ -17,7 +17,7 @@ function secondsToMinutesSeconds(seconds) {
 
 
 const getSongs = async () => {
-    let files = await fetch("https://figuringtocode.github.io/TuneWave/songs")
+    let files = await fetch("https://127.0.0.1:5500/songs/")
     let response = await files.text()
     let div = document.createElement("div")
     div.innerHTML = response
